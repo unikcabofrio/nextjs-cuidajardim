@@ -1,9 +1,10 @@
+import './style.css'
 import { ListSections1, ListSections2, ListSections3, ListSections4 } from "@/utils/settings"
 import IconeSVG from "@/components/icon"
 
 export function Section1() {
     return (
-        <div>
+        <div className='section1'>
             <h1>Área de atendimento - Região dos Lagos</h1>
             <p>Serviços de Jardinagem e Paisagismo em toda a Região dos Lagos, RJ. Horário de atendimento 09:00 até as 19:00h.</p>
             <div>
@@ -12,7 +13,9 @@ export function Section1() {
                         return (
                             <span key={index}>
                                 <strong>{item.city}</strong>
-                                <p>{item.description}</p>
+                                {
+                                    item.description.map((_item,_index)=>{return(<p key={_index}>{_item}</p>)})
+                                }
                             </span>
                         )
                     })
@@ -25,7 +28,7 @@ export function Section1() {
 
 export function Section2() {
     return (
-        <div>
+        <div className='section2'>
             <h1>Jardinagem e Paisagismo de confiança na Região dos Lagos, RJ</h1>
             <div>
                 {
@@ -46,7 +49,7 @@ export function Section2() {
 
 export function Section3() {
     return (
-        <div>
+        <div className='section3'>
             <h3>Tudo para o seu jardim</h3>
             <h2>Em um único lugar</h2>
             <p>
@@ -59,7 +62,7 @@ export function Section3() {
                         return (
                             <span key={index}>
                                 <IconeSVG icone={'check'} />
-                                <p>{item.description}</p>
+                                <p>{item}</p>
                             </span>
                         )
                     })
@@ -72,7 +75,7 @@ export function Section3() {
 
 export function Section4() {
     return (
-        <div>
+        <div className='section4'>
             <h1>Nosso negócio só floresce com você.</h1>
             <p>
                 Nós entendemos que o seu tempo é precioso, e por isso, sempre damos prioridade em responder às suas perguntas o

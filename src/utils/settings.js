@@ -202,17 +202,17 @@ export const ListSections3 = [
 
 export const ListSections4 = [
     {
-        icone:"",
+        icone:"forum",
         titulo:"Atendimento Personalizado",
         description:"Atendimento rápido e eficiente garantido! Nossa equipe está pronta para ajudar você."
     },
     {
-        icone:"",
+        icone:"verified",
         titulo:"Qualidade",
         description:"Garantimos qualidade em todos os aspectos! Utilizamos somente os melhores materiais e fornecedores para garantir a qualidade do seu jardim."
     },
     {
-        icone:"",
+        icone:"heart_check",
         titulo:"Garantia de Satisfação",
         description:"Nossos clientes são nossa melhor referência. Temos uma longa lista de clientes satisfeitos que continuam a confiar em nós para cuidar de seus jardins."
     }
