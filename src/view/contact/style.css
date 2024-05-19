@@ -1,0 +1,77 @@
+.contato {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    padding-top: 6rem;
+}
+
+.listContato{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.listContato>img{
+    width: 50%;
+    border-radius: 1rem;
+}
+
+.listContato>section{
+    width: 100%;
+}
+
+.boxcontacto{
+    width: 100%;
+    color: var(--color2);
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.boxcontacto>span{
+    font-size: 1.8rem;
+}
+
+.boxcontacto>div{
+    width: 100%;
+    padding-left: 1rem;
+}
+
+
+.boxcontacto>div>a{
+    color: var(--color2);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.boxcontacto>div>a:hover{
+    color: var(--color4);
+}
+
+.boxcontacto>div>p{
+    color: var(--color_black);
+}
+
+
+@media (max-width: 430px) {
+    .contato {
+        padding: 6rem 1rem;
+    }
+
+    .listContato{
+        flex-direction: column;
+    }
+    
+    .listContato>img{
+        width: 100%;
+    }
+
+    .boxcontacto{
+        justify-content: center;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 884px) {}

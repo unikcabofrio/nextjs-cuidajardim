@@ -1,0 +1,143 @@
+.price {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    padding-top: 6rem;
+}
+
+.listPrices {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.listPrices>div {
+    position: relative;
+    width: 100%;
+    min-height: 550px;
+    background-color: #FFF;
+    padding: 1rem;
+    padding-top: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    scale: 0.9;
+}
+
+.divfocus {
+    scale: 1 !important;
+}
+
+.mais {
+    background-color: var(--color4);
+    color: #FFF;
+    position: absolute;
+    top: -1rem;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+}
+
+.value {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    color: var(--color5);
+    font-size: 1.1rem;
+}
+
+.valueprice {
+    color: var(--color2);
+    font-size: 2.5rem;
+}
+
+.tempo {
+    font-size: 1.2rem;
+}
+
+.value>p {
+    text-align: justify;
+    text-align-last: center;
+    margin: 1rem 0;
+}
+
+.benefi {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: var(--color5);
+}
+
+.benefi>span {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    margin: .2rem 0;
+}
+
+.benefi>span>span {
+    color: var(--color1);
+}
+
+.listPrices>div>button {
+    width: 100%;
+    background-color: var(--color_white);
+    border: 2px solid transparent;
+    border-radius: .5rem;
+    color: #482307;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.listPrices>div>button:hover {
+    background-color: var(--color3);
+    color: #FFF;
+}
+
+.listPrices>div>.focus {
+    background-color: var(--color3);
+    color: #FFF;
+}
+
+.listPrices>div>.focus:hover {
+    background-color: var(--color_white);
+    color: #482307;
+}
+
+@media (max-width: 430px) {
+    .price {
+        padding: 6rem 1rem;
+    }
+
+    .listPrices {
+        grid-template-columns: 1fr;
+    }
+
+    .listPrices>div,
+    .divfocus {
+        scale: .95 !important;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 884px) {
+    .listServices {
+        flex-direction: column;
+    }
+
+    .listPrices {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .listPrices>div,
+    .divfocus {
+        scale: .95 !important;
+    }
+
+}

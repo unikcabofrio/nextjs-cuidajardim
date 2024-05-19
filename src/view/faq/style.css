@@ -1,0 +1,82 @@
+.faq {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    padding-top: 6rem;
+}
+
+.titulo>p>button {
+    background-color: transparent;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--color4);
+}
+
+.listFAQ {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listFAQ>div {
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 1rem;
+}
+
+.listFAQ>div>details {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.listFAQ>div>details>summary {
+    font-size: 1.1rem;
+    color: var(--color1);
+    background-color: var(--color_white);
+}
+
+.listFAQ>div>details>p {
+    color: var(--color2);
+    text-align: justify;
+    border: 2px solid var(--color1);
+    border-top: 0;
+    border-right: 0;
+    padding: 1rem .5rem;
+    margin-top: .5rem;
+    margin-left: .3rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.listFAQ>img {
+    width: 50%;
+}
+
+@media (max-width: 430px) {
+    .faq {
+        padding: 6rem 1rem;
+    }
+
+    .listFAQ {
+        flex-direction: column;
+    }
+
+    .listFAQ>img {
+        width: 100%;
+        padding: 2rem 0;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 884px) {
+    .listFAQ {
+        flex-direction: column;
+    }
+
+    .listFAQ>img {
+        width: 100%;
+        padding: 2rem 0;
+    }
+}

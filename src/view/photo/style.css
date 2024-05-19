@@ -1,0 +1,39 @@
+.galeria {
+    width: 100%;
+    padding: 4rem;
+    padding-top: 6rem;
+}
+
+.photo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.photo>img {
+    width: 100%;
+    border-radius: 1rem;
+    scale: 0.98;
+}
+
+.photo>img:hover {
+    scale: 1;
+}
+
+@media (max-width: 430px) {
+    .galeria {
+        padding: 6rem 1rem;
+    }
+    .photo {
+        grid-template-columns: 1fr 1fr;
+        gap: .5rem;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 884px) {
+    .photo {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: .5rem;
+    }
+}
